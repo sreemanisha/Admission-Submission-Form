@@ -1,0 +1,60 @@
+/* CSS for animations */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #badcef;
+}
+
+.container {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 25px;
+    text-decoration: wavy;
+    font-weight: bold;
+    background-color: #ebf1f7;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: auto cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputBox input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #2d0a0a;
+    border-radius: 40px;
+    outline: aquamarine;
+}
+
+.inputBox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #082961;
+    color: #63a8bb;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.inputBox input[type="submit"]:hover {
+    background-color: #153c17;
+}
